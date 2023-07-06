@@ -1,0 +1,25 @@
+// Import des fichiers Sass de base
+@import '/base/reset';
+@import 'base/typography';
+@import 'base/variables';
+
+// Import des fichiers Sass des composants
+@import 'components/buttons';
+@import 'components/forms';
+
+// Import des fichiers Sass de la mise en page
+@import 'layout/header';
+@import 'layout/footer';
+
+// Import des fichiers Sass des pages
+@import 'pages/home';
+@import 'pages/about';
+
+// Import des fichiers Sass des thèmes
+@import 'themes/default';
+@import 'themes/dark';
+
+// Import des utilitaires Sass
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'utils/variables';
