@@ -1,9 +1,156 @@
+:root {
+  --background-color: white;
+  --Primary-color:#9356DC ;
+  --Secondary-color:#FF79DA;
+  --Tertary-color:#99E2D0;
+
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  max-width: 768px;
+  margin: 0 auto;
 
-  }
+}
+
+header {
+  background-color: var(--background-color);
+}
+
+
+/*Logo*/
+
+
+header img {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+/*Barre de recherche*/
+
+
+.search-bar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+
+.search-bar input {
+  border: none;
+  color: #353535;
+  background-color: #EAEAEA;
+  margin-left: 2%;
+  width: 40%;
+  outline: none;
+  font-size: 17px;
+}
+
+/*Introduction et bouton "explorer nos restaurants"*/
+
+.discover-restaurant {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 10% 0;
+}
+
+
+.discover-restaurant h2 {
+  font-size: 24px;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+/*bouton "Explorer nos restaurants*/
+.btn-search-restaurant {
+  box-sizing: content-box;
+  background: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
+  width: 50%;
+  height: 30px;
+  padding: 13px 18px;
+  border-radius: 2rem;
+  color: white;
+  border: 1px var(--Primary-color);
+  transition: transform 400ms;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.btn-search-restaurant:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
+
+/*Section Fonctionnement*/
+.function{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+.btn-function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 8%;
+  border-radius: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.btn-function a
+{
+  display: flex;
   
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+.btn-function i 
+{
+  margin-right: 5%;
+  justify-content: center;
+}
+.btn-function:hover
+{
+  transition: 0.2s;
+  color: var(--Primary-color);
+}
 
+
+/*Les restaurants*/
+
+.restaurant
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.card-restaurant
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+.card-restaurant img
+{
+  width:100%;
+  border-radius: 20px;
+}
