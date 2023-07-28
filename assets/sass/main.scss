@@ -1,1 +1,10 @@
-@import "composent/searchbar.scss" 
+@import "./composent/root";
+@import "./base/body";
+@import "./layouts/header";
+@import "composent/searchbar.scss";
+@import "composent/discover";
+@import "composent/function";
+@import "composent/restaurant";
+@import "layouts/footer";
+@import "composent/_menu.scss"
+

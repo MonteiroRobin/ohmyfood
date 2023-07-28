@@ -1,0 +1,50 @@
+.menu{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    
+
+    
+    .image__menu {
+    
+        left: 0;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        z-index: -100;
+    
+        img {
+            width: 100%;
+            border-radius: 20px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+}
+&__texte{
+    position: relative;
+    border-radius: 20px;
+    margin-top: -15%;
+    background-color: var(--backgroundgrey2);
+}
+
+&__title
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+    line-height: normal;
+
+article h1{
+    font-family: "Shrikhand", cursive;
+    font-size: 40px;
+    font-style: italic, bold;
+    font-weight: 900;
+}
+}
+
+
+  }
+  
+
+

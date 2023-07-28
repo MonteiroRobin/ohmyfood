@@ -1,0 +1,76 @@
+/*Section Fonctionnement*/
+
+.function{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    position: relative;
+  
+  
+  .function h2{
+    font-size: 24px;
+    color: #000000;
+    margin-left: 3%;
+  }
+  
+  
+  .step_icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #9356DC; 
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center; 
+    color: var(--white);
+      position: absolute;
+      top: 50%;
+      left: -12px;
+      transform: translateY(-50%); 
+    }
+    
+  
+    /*Alignement icon*/
+  .mobile
+  {
+    margin-left: 4%;
+  } }
+  
+
+  
+.btn-function {
+    background-color:#F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 0px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    border-radius: 20px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    }
+  
+  
+  .btn-function a
+  {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+  }
+  .btn-function i 
+  {
+    margin-right: 5%;
+    justify-content: center;
+  }
+  .btn-function:hover
+  {
+    transition: 0.2s;
+    color: var(--Primary-color);
+  }
+  

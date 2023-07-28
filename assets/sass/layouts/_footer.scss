@@ -1,0 +1,44 @@
+
+/*Ensemble footer*/
+footer
+{
+ 
+  background: var(--Grey);
+  color: white;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_title
+{
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 700;
+  margin: 1rem 0rem;
+  margin-left: 10%;
+}
+footer p {
+  color: white;
+  background-color: var(--Grey);
+  margin-left: 10%;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+footer .icon_hand
+{
+  margin-right: 1.5%;
+}
+footer p i
+{
+margin-right: 2.5%;
+}
+footer a 
+{
+  text-decoration: none;
+  color: white ;
+  margin-left: 10%;
+}
+
+

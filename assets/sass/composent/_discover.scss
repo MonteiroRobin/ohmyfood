@@ -1,0 +1,37 @@
+/*Introduction et bouton "explorer nos restaurants"*/
+
+.discover-restaurant {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 10% 0;
+  
+  
+  .discover-restaurant__title {
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*bouton "Explorer nos restaurants*/
+  .discover-restaurant__btn-search {
+    box-sizing: content-box;
+    background: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
+    width: 50%;
+    height: 30px;
+    padding: 13px 18px;
+    border-radius: 2rem;
+    color: white;
+    border: 1px var(--Primary-color);
+    transition: transform 400ms;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  
+  .discover-restaurant__btn-search:hover {
+    transform: scale(1.02);
+    opacity: 0.7;
+  } }

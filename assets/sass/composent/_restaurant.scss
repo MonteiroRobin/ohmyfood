@@ -1,0 +1,64 @@
+/*Les restaurants*/
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--backgroundgrey) ;
+  
+  
+  .restaurant__link {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .restaurant__title {
+    font-size: 24px;
+    color: #000000;
+    margin-left: 3%;
+  }
+  
+  .restaurant__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  
+  .restaurant__heart {
+    position: absolute;
+    display: flex;
+    margin-top: -10%;
+    margin-left: 80%;
+  }
+  
+  .restaurant__text {
+    margin-left: 5%;
+  }
+  
+  .restaurant__card img {
+    width: 100%;
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .restaurant__label-new {
+    background-color: #99E2D0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+  }
+
+
+}
+.height{
+  height: 20px;
+}
