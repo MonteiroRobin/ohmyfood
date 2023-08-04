@@ -1,10 +1,17 @@
-@import "./composent/root";
+// Base
 @import "./base/body";
-@import "./layouts/header";
-@import "composent/searchbar.scss";
-@import "composent/discover";
-@import "composent/function";
-@import "composent/restaurant";
-@import "layouts/footer";
-@import "composent/_menu.scss"
+@import "./composent/root";
+@import "./composent/searchbar";
+@import "./composent/discover";
+@import "./composent/function";
+@import "./composent/restaurant";
+@import "./composent/menu";
 
+// Layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+
+// Utils
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/variables';

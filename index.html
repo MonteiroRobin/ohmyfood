@@ -5,7 +5,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
     />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/sass/main.css" />
     <script src="https://kit.fontawesome.com/41909ecb08.js"></script>
 
@@ -44,7 +45,7 @@
         </button>
       </section>
 
-      <!--Section Fonctionnement-->
+      <!--Section Fonctionnement--> 
       <section class="function">
         <h2>Fonctionnement</h2>
 
@@ -72,7 +73,7 @@
         <h2 class="restaurant__title">Restaurant</h2>
 
         <article class="restaurant__card card-restaurant">
-          <a href="/restaurants/restaurant-1.html" class="restaurant__link">
+          <a href="/restaurants/la-palette-du-gout.html" class="restaurant__link">
             <img
               src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="Photo du nouveau restaurant, La palette du goût, à Ménilmontant"
@@ -83,20 +84,22 @@
               <p class="restaurant__location">Dégustez au restaurant</p>
             </div>
             <div class="restaurant__heart heart__card__restaurant">
-              <i
-                class="restaurant__like card__like menu__like menu__like--noBg far fa-heart fa-2x"
-              ></i>
-
+              <input class="checkbox checkbox--heart" type="checkbox" id="favorite1">
+              <label class="icon-wrapper icon-wrapper--heart" for="favorite1">
+                <i class="fas fa-heart icon icon--heart icon--heart--filled" aria-hidden="true"></i>
+                <span class="icon-hider"></span>
+                <i class="fas fa-heart icon icon--heart icon--heart--empty" aria-hidden="true"></i>
+              </label>
             </div>
           </a>
         </article>
 
         <article class="restaurant__card card-restaurant">
-          <a href="/restaurants/restaurant-2.html" class="restaurant__link">
+          <a href="/restaurants/la-note-enchantée.html" class="restaurant__link">
             <img
               src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
               alt="Photo du nouveau restaurant, La note enchantée, à Charonne"
-              class="heigt"
+           
             />
             <span class="restaurant__label-new new__restaurant">Nouveau</span>
             <div class="restaurant__text text__card__restaurant">
@@ -113,7 +116,7 @@
         </article>
 
         <article class="restaurant__card card-restaurant">
-          <a href="/restaurant-3.html" class="restaurant__link">
+          <a href="/à-la-française.html" class="restaurant__link">
             <img
               src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
               alt="Photo du restaurant, À la française, à Cité Rouge"
@@ -132,7 +135,7 @@
         </article>
 
         <article class="restaurant__card card-restaurant">
-          <a href="/restaurant-4.html" class="restaurant__link">
+          <a href="/le-délice-des-sens.html" class="restaurant__link">
             <img
               src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="Photo du restaurant, Le délice des sens, à Folie-Méricourt"
