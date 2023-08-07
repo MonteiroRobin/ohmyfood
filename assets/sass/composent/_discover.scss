@@ -1,22 +1,23 @@
 /*Introduction et bouton "explorer nos restaurants"*/
+@import "../utils/responsive";
 
 .discover-restaurant {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #F6F6F6;
-    padding: 10% 0;
-  
-  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
   &__title {
     font-size: 24px;
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
+
   /*bouton "Explorer nos restaurants*/
- &__btn-search {
+  &__btn-search {
     box-sizing: content-box;
     background: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
     width: 50%;
@@ -30,19 +31,57 @@
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
-   
   }
-  
+
   &__btn-search:hover {
     transform: scale(1.02);
     opacity: 0.7;
+  }
+
+
+
+  @include xx-large-screen {
    
 
-@mixin xx-large{
+      &__title {
+        margin: 0;
+        font-size: 60px;
+      }
 
-  &__title {
-    font-size: 80px;
+      &__btn-search {
+        width: 18%;
+      }
+
   }
-}
 
-  } }
+
+
+
+  @include x-large-screen {
+    
+
+      &__title {
+     
+        font-size: 48px;
+      }
+
+      &__btn-search {
+        width: 15%;
+      }
+   
+  }
+
+  @include large-screen {
+   
+    
+      &__title {
+        font-size: 36px;
+      }
+
+      &__btn-search {
+        width: 14%;       
+      }
+    }
+  
+
+}
