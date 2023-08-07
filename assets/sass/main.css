@@ -1,17 +1,32 @@
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 768px;
   margin: 0 auto;
+  max-width: 100%;
 }
-
-:root {
-  --white: white;
-  --Primary-color:#9356DC ;
-  --Secondary-color:#FF79DA;
-  --Tertary-color:#99E2D0;
-  --Grey:#353535;
-  --backgroundgrey:#EAEAEA;
-  --backgroundgrey2:rgb(246, 240, 240);
+@media (max-width: 576px) {
+  body {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+  }
 }
 
 .search-bar {
@@ -348,4 +363,14 @@ footer a {
   text-decoration: none;
   color: white;
   margin-left: 10%;
+}
+
+:root {
+  --white: white;
+  --Primary-color:#9356DC ;
+  --Secondary-color:#FF79DA;
+  --Tertary-color:#99E2D0;
+  --Grey:#353535;
+  --backgroundgrey:#EAEAEA;
+  --backgroundgrey2:rgb(246, 240, 240);
 }/*# sourceMappingURL=main.css.map */

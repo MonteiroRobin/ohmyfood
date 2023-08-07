@@ -1,6 +1,5 @@
 // Base
 @import "./base/body";
-@import "./composent/root";
 @import "./composent/searchbar";
 @import "./composent/discover";
 @import "./composent/function";
@@ -12,6 +11,8 @@
 @import "./layouts/footer";
 
 // Utils
+@import 'utils/root';
 @import 'utils/functions';
 @import 'utils/mixins';
 @import 'utils/variables';
+@import 'utils/responsive';

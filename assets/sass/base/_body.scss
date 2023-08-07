@@ -1,7 +1,31 @@
+// styles.scss
+
+@import '../utils/responsive'; 
+
 body {
-    font-family: 'Roboto', sans-serif;
-    max-width: 768px;
-    margin: 0 auto;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 100%; 
 
   
+  @include small-screen {
+    max-width: map-get($breakpoint, small);
+  }
+
+
+  @include medium-screen {
+    max-width: map-get($breakpoint, medium);
+  }
+
+  @include large-screen {
+    max-width: map-get($breakpoint, large);
+  }
+
+  @include x-large-screen {
+    max-width: map-get($breakpoint, x-large);
+  }
+
+  @include xx-large-screen {
+    max-width: map-get($breakpoint, xx-large);
+  }
+}

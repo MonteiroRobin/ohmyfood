@@ -37,4 +37,12 @@
     transform: scale(1.02);
     opacity: 0.7;
    
+
+@mixin xx-large{
+
+  &__title {
+    font-size: 80px;
+  }
+}
+
   } }
