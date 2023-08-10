@@ -1,0 +1,75 @@
+
+
+.plate {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    
+    &__annoncement{
+    
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+    
+    &:after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }}
+    &__menu{
+        background-color: #fff;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        border-radius: 0.75rem;
+        margin: 1rem 0;
+        box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,.1);
+        overflow: hidden;
+        cursor: pointer;
+        animation: itemAppear .6s;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        animation-fill-mode: both;
+        justify-content: space-between;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    
+
+    &__choice {
+        
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+font-size: x-large;
+ 
+   
+
+}
+    
+ &__title{
+   
+    font-weight: bold;
+    margin: 0;
+ 
+ }
+ &__description{
+    margin-top: 3%;
+   
+ }
+&__price
+{
+   position: relative;
+margin-bottom: 2%;
+    font-weight: 700;
+   font-size: x-large;
+   
+    
+}
+
+}

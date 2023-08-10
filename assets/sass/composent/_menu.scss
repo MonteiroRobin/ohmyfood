@@ -24,23 +24,20 @@
     position: relative;
     border-radius: 20px;
     margin-top: -15%;
-    background-color: var(--backgroundgrey2);
+    background-color: var(--menu-bg);
 }
 
 &__title
 {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    width: 90%;
     margin-left: 10%;
-    line-height: normal;
-
-article h1{
+    line-height: normal; 
     font-family: "Shrikhand", cursive;
-    font-size: 40px;
-    font-style: italic, bold;
+    font-size: 35px;
+    font-style: bold;
     font-weight: 900;
-}
+
 }
 
 

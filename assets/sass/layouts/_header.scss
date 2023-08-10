@@ -3,11 +3,10 @@ header {
     background-color: var(--white);
    padding-bottom: 2%;
    padding-top: 2%;
- 
+ display: flex;
  img {
   
     display: flex;
-    width: 50%;
     margin: 0 auto;
   
     
@@ -15,9 +14,9 @@ header {
   }
  .return-arrow{
    display: flex;
-   margin-top:1% ;
+   margin-top:18px;
    margin-left: 2%;
-   position: absolute;
+   position: relative;
    text-decoration: none;
    color: black;
    font-size: x-large;

@@ -41,43 +41,29 @@
 
 
   @include xx-large-screen {
-   
-
       &__title {
         margin: 0;
         font-size: 60px;
       }
-
       &__btn-search {
         width: 18%;
       }
-
   }
 
-
-
-
   @include x-large-screen {
-    
-
       &__title {
      
         font-size: 48px;
       }
-
       &__btn-search {
         width: 15%;
-      }
-   
+      }  
   }
 
-  @include large-screen {
-   
-    
+  @include large-screen { 
       &__title {
         font-size: 36px;
       }
-
       &__btn-search {
         width: 14%;       
       }
