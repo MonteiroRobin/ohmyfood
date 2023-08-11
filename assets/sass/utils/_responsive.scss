@@ -8,32 +8,39 @@ $breakpoint: (
   xx-large: 1400px
 );
 
-@mixin small-screen {
+@mixin small{
   @media (max-width: map-get($breakpoint, small)) {
     @content;
   }
 }
 
-@mixin medium-screen {
+@mixin medium {
   @media (min-width: map-get($breakpoint, medium)) {
     @content;
   }
 }
 
-@mixin large-screen {
+@mixin large {
   @media (min-width: map-get($breakpoint, large)) {
     @content;
   }
 }
 
-@mixin x-large-screen {
+@mixin x-large {
   @media (min-width: map-get($breakpoint, x-large)) {
     @content;
   }
 }
 
-@mixin xx-large-screen {
+@mixin xx-large {
   @media (min-width: map-get($breakpoint, xx-large)) {
     @content;
   }
+} 
+
+@mixin breakpoint($bp: 0){
+  @media(min-width: $bp){
+    @content;
+  }
+ 
 }

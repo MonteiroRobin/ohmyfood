@@ -62,6 +62,26 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .discover-restaurant__title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .discover-restaurant__title {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .discover-restaurant__title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1400px) {
+  .discover-restaurant__title {
+    font-size: 60px;
+  }
+}
 .discover-restaurant__btn-search {
   box-sizing: content-box;
   background: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
@@ -80,31 +100,6 @@ body {
 .discover-restaurant__btn-search:hover {
   transform: scale(1.02);
   opacity: 0.7;
-}
-@media (min-width: 1400px) {
-  .discover-restaurant__title {
-    margin: 0;
-    font-size: 60px;
-  }
-  .discover-restaurant__btn-search {
-    width: 18%;
-  }
-}
-@media (min-width: 1200px) {
-  .discover-restaurant__title {
-    font-size: 48px;
-  }
-  .discover-restaurant__btn-search {
-    width: 15%;
-  }
-}
-@media (min-width: 992px) {
-  .discover-restaurant__title {
-    font-size: 36px;
-  }
-  .discover-restaurant__btn-search {
-    width: 14%;
-  }
 }
 
 /*Section Fonctionnement*/

@@ -7,24 +7,24 @@ body {
   max-width: 100%; 
 
   
-  @include small-screen {
+  @include small {
     max-width: map-get($breakpoint, small);
   }
 
 
-  @include medium-screen {
+  @include medium {
     max-width: map-get($breakpoint, medium);
   }
 
-  @include large-screen {
+  @include large {
     max-width: map-get($breakpoint, large);
   }
 
-  @include x-large-screen {
+  @include x-large{
     max-width: map-get($breakpoint, x-large);
   }
 
-  @include xx-large-screen {
+  @include xx-large{
     max-width: map-get($breakpoint, xx-large);
   }
 }

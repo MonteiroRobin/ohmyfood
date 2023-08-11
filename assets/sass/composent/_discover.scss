@@ -14,6 +14,19 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    @include medium {
+      font-size: 28px;
+    }
+    @include large{
+      font-size: 36px;
+    }
+    @include x-large{
+      font-size: 48px;
+    }
+    @include xx-large{
+      font-size: 60px;
+    }
+    
   }
 
   /*bouton "Explorer nos restaurants*/
@@ -39,35 +52,5 @@
   }
 
 
-
-  @include xx-large-screen {
-      &__title {
-        margin: 0;
-        font-size: 60px;
-      }
-      &__btn-search {
-        width: 18%;
-      }
-  }
-
-  @include x-large-screen {
-      &__title {
-     
-        font-size: 48px;
-      }
-      &__btn-search {
-        width: 15%;
-      }  
-  }
-
-  @include large-screen { 
-      &__title {
-        font-size: 36px;
-      }
-      &__btn-search {
-        width: 14%;       
-      }
-    }
-  
 
 }
