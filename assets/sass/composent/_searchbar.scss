@@ -1,8 +1,12 @@
+@import "../utils/variables";
+@import "../utils/responsive";
+
+
 .search-bar {
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    background-color: $backgroundgrey;
+    background-color:$backgroundgrey;
     align-items: center;
   
   

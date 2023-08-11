@@ -1,6 +1,6 @@
 /*Introduction et bouton "explorer nos restaurants"*/
-@import "../utils/responsive";
 @import "../utils/variables";
+@import "../utils/responsive";
 
 .discover-restaurant {
   display: flex;
@@ -15,6 +15,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+
     @include medium {
       font-size: 28px;
     }
@@ -26,6 +29,8 @@
     }
     @include xx-large{
       font-size: 60px;
+      margin-bottom: 18px;
+      margin-top: 30px;
     }
     
   }
@@ -38,13 +43,28 @@
     height: 30px;
     padding: 13px 18px;
     border-radius: 2rem;
-    color: white;
+    color: $white;
     border: 1px $Secondary-color;
     transition: transform 400ms;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
+
+
+    @include medium {
+   
+    }
+    @include large{
+ 
+    }
+    @include x-large{
+    
+    }
+    @include xx-large{
+      width: 14%;
+    }
+
   }
 
   &__btn-search:hover {
@@ -52,6 +72,9 @@
     opacity: 0.7;
   }
 
-
+p{
+  font-size: 18px;
+  margin-bottom: 18px;
+}
 
 }
