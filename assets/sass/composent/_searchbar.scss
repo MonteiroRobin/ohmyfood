@@ -2,14 +2,14 @@
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    background-color: #EAEAEA;
+    background-color: $backgroundgrey;
     align-items: center;
   
   
  &__input {
     border: none;
     color: #353535;
-    background-color: #EAEAEA;
+    background-color: $backgroundgrey;
     margin-left: 2%;
     width: 120px;
     outline: none;

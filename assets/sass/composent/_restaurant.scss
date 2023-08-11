@@ -55,8 +55,8 @@
   }
   
  &__label-new {
-    background-color: #99E2D0;
-    color: #1b6150;
+    background-color: $Tertary-color;
+    color: $ColorNew;
     padding: 0.5rem;
     border-radius: 0.125rem;
     position: absolute;
@@ -89,7 +89,7 @@
 
 .checkbox:checked + .icon-wrapper--heart .icon--heart--filled {
   display: inline;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient($Secondary-color, $Primary-color);
 }
 
 

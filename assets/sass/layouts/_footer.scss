@@ -3,7 +3,7 @@
 footer
 {
  
-  background: var(--Grey);
+  background: $Grey;
   color: white;
   width: auto;
   display: flex;
@@ -13,7 +13,7 @@ footer
 .footer_title
 {
   font-size: 27px;
-  color: white;
+  color:$white ;
   font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: 700;
@@ -22,8 +22,8 @@ footer
 
 }
 footer p {
-  color: white;
-  background-color: var(--Grey);
+  color: $white ;
+  background-color: $Grey;
   margin-left: 10%;
   font-family: 'Roboto';
   font-size: 16px;
@@ -39,7 +39,7 @@ margin-right: 10px;
 footer a 
 {
   text-decoration: none;
-  color: white ;
+  color: $white ;
   margin-left: 10%;
 }
 

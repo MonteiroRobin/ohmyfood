@@ -3,7 +3,7 @@
 .function{
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: $white;
     position: relative;
   
   
@@ -21,11 +21,11 @@
     display: flex;
     width: 24px;
     height: 24px;
-    background-color: #9356DC; 
+    background-color: $Primary-color; 
     border-radius: 50%; 
     justify-content: center;
     align-items: center; 
-    color: var(--white);
+    color: $white;
       position: absolute;
       top: 50%;
       left: -12px;
@@ -43,7 +43,7 @@
 
   
 .btn-function {
-    background-color:#F6F6F6;
+    background-color:$backgroundgrey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,5 +78,5 @@
   .btn-function:hover
   {
     transition: 0.2s;
-    color: var(--Primary-color);
+    color: $Primary-color;
   }
