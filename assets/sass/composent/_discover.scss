@@ -39,7 +39,7 @@
   &__btn-search {
     box-sizing: content-box;
     background: linear-gradient(175deg, $Primary-color 0%, $Secondary-color 100%);
-    width: 50%;
+    width: 40%;
     height: 30px;
     padding: 13px 18px;
     border-radius: 2rem;
@@ -53,13 +53,13 @@
 
 
     @include medium {
-   
+      width: 33%;
     }
     @include large{
- 
+      width: 24%;
     }
     @include x-large{
-    
+      width: 20%;
     }
     @include xx-large{
       width: 14%;

@@ -11,8 +11,82 @@ footer
   width: auto;
   display: flex;
   flex-direction: column;
-}
 
+  @include large{
+    flex-direction: row-reverse; 
+    padding-top: 5%;
+    
+  }
+
+  @include x-large{
+    flex-direction: row-reverse; 
+    padding-top: 5%;
+    
+  }
+  @include xx-large{
+    flex-direction: row-reverse; 
+    padding-top: 5%;
+    
+  }
+
+  
+}
+.footer__mention {
+  
+
+  @include medium {
+   
+  }
+  @include large{
+    position: absolute;
+    margin-right: 29%;
+margin-top: 2.15%; 
+  }
+  @include x-large{
+    position: absolute;
+    margin-right: 25%;
+margin-top: 2.06%; 
+  }
+  @include xx-large{
+    
+    position: absolute;
+    margin-right: 25%;
+margin-top: 2.06%; 
+  }
+
+}
+.footer__propal {
+ 
+
+  @include medium {
+   
+  }
+  @include large{
+    flex-direction: row;
+    display: flex;
+ margin-left: 28%;
+ margin-top: 1.4%;
+ width: 100%;
+  
+  }
+  @include x-large{
+    flex-direction: row;
+    display: flex;
+ margin-left: 32%;
+ margin-top: 1.4%;
+ width: 100%;
+  
+  }
+  @include xx-large{
+    flex-direction: row;
+    display: flex;
+ margin-left: 35%;
+ margin-top: 1.7%;
+ width: 100%;
+  }
+
+  
+}
 .footer_title
 {
   font-size: 27px;
@@ -23,6 +97,27 @@ footer
   margin: 1rem 0rem;
   margin-left: 10%;
 
+
+
+
+  @include medium {
+   
+  }
+  @include large{
+    margin-right: 5%;
+    margin-top: 1%;
+  }
+  @include x-large{
+    margin-right: 5%;
+  }
+  @include xx-large{
+    margin-right: 5%;
+  }
+
+
+
+
+
 }
 footer p {
   color: $white ;
@@ -30,10 +125,46 @@ footer p {
   margin-left: 10%;
   font-family: 'Roboto';
   font-size: 16px;
+
+
+
+  
+
+  @include medium {
+   
+  }
+  @include large{
+    font-size: 12px;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  @include x-large{
+    font-size: 12px;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  @include xx-large{
+    font-size: 12px;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+  }
+
 }
 footer .icon_hand
 {
   margin-right: 2px;
+  @include large{
+    margin-right: 10px;
+  }
+  @include x-large{
+    margin-right: 10px;
+  }
+  @include xx-large{
+    margin-right: 10px;;
+    
+  }
+
 }
 footer p i
 {
@@ -44,6 +175,29 @@ footer a
   text-decoration: none;
   color: $white ;
   margin-left: 10%;
+
+
+
+  @include medium {
+   
+  }
+  @include large{
+    position: absolute;
+    margin-right: 21%;
+margin-top: 1.9%;  
+  }
+  @include x-large{
+    position: absolute;
+    margin-right: 18%;
+margin-top: 1.8%;  
+  }
+  @include xx-large{
+    position: absolute;
+    margin-right: 13%;
+margin-top: 1.2%;  
+  }
+
+  
 }
 
 
