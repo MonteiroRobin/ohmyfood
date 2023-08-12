@@ -482,11 +482,63 @@ label {
   -o-object-fit: cover;
   object-fit: cover;
 }
+@media (min-width: 768px) {
+  .menu .image__menu img {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .menu .image__menu img {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu .image__menu img {
+    height: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  .menu .image__menu img {
+    height: 400px;
+  }
+}
 .menu__texte {
   position: relative;
   border-radius: 20px;
   margin-top: -15%;
   background-color: #f6f6f6;
+}
+@media (min-width: 768px) {
+  .menu__texte {
+    margin: 0 auto;
+    margin-top: -4%;
+    width: 85%;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .menu__texte {
+    margin: 0 auto;
+    margin-top: -4%;
+    width: 85%;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__texte {
+    margin: 0 auto;
+    margin-top: -4%;
+    width: 85%;
+    align-items: center;
+  }
+}
+@media (min-width: 1400px) {
+  .menu__texte {
+    margin: 0 auto;
+    margin-top: -4%;
+    width: 85%;
+    align-items: center;
+  }
 }
 .menu__title {
   display: flex;
@@ -494,15 +546,57 @@ label {
   margin-left: 10%;
   line-height: normal;
   font-family: "Shrikhand", cursive;
-  font-size: 35px;
+  font-size: 28px;
   font-style: bold;
   font-weight: 900;
+}
+@media (min-width: 992px) {
+  .menu__title {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__title {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .menu__title {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 .plate {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
+}
+@media (min-width: 992px) {
+  .plate {
+    max-width: 65%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .plate {
+    max-width: 65%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  .plate {
+    max-width: 65%;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 .plate__annoncement {
   text-transform: uppercase;
@@ -554,6 +648,14 @@ label {
   margin-bottom: 2%;
   font-weight: 700;
   font-size: x-large;
+}
+.plate .btn-center {
+  display: flex;
+  margin-bottom: 3%;
+  width: 25%;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 18px;
 }
 
 header {

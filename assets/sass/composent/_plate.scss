@@ -7,6 +7,27 @@
     overflow: hidden;
     padding: 0 1rem;
     
+
+
+    @include medium {
+   
+    }
+    @include large{
+        max-width: 65%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    @include x-large{
+        max-width: 65%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    @include xx-large{
+        max-width: 65%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     &__annoncement{
     
         text-transform: uppercase;
@@ -74,4 +95,13 @@ margin-bottom: 2%;
     
 }
 
+.btn-center{
+    display: flex;
+    margin-bottom: 3%;
+    width: 25%;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 18px;
+    
+}
 }

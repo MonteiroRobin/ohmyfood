@@ -7,7 +7,6 @@
     justify-content:center;
     flex-direction: column;
     
-
     
     .image__menu {
     
@@ -22,13 +21,53 @@
             border-radius: 20px;
             -o-object-fit: cover;
             object-fit: cover;
+            
+                @include medium {
+                    height: 250px;
+                }
+                @include large{
+                    height: 300px;
+                }
+                @include x-large{
+                    height: 350px;
+                }
+                @include xx-large{
+                  height: 400px;
+                }
         }
+        
 }
 &__texte{
     position: relative;
     border-radius: 20px;
     margin-top: -15%;
     background-color: $menu-bg;
+    
+
+    @include medium {
+        margin:  0 auto;
+        margin-top:  -4%;
+              width: 85%;
+              align-items: center;
+    }
+    @include large{
+        margin:  0 auto;
+        margin-top:  -4%;
+              width: 85%;
+              align-items: center;
+    }
+    @include x-large{
+        margin:  0 auto;
+        margin-top:  -4%;
+              width: 85%;
+              align-items: center;
+    }
+    @include xx-large{
+margin:  0 auto;
+margin-top:  -4%;
+      width: 85%;
+      align-items: center;
+    }
 }
 
 &__title
@@ -38,14 +77,30 @@
     margin-left: 10%;
     line-height: normal; 
     font-family: "Shrikhand", cursive;
-    font-size: 35px;
+    font-size: 28px;
     font-style: bold;
     font-weight: 900;
+    
 
-}
+    @include medium {
+   
+    }
+    @include large{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    @include x-large{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    @include xx-large{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
 
 
   }
-  
-
-
+}
