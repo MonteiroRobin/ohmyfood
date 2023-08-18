@@ -174,29 +174,8 @@ footer a
 {
   text-decoration: none;
   color: $white ;
-  margin-left: 10%;
-
-
-
-  @include medium {
-   
-  }
-  @include large{
-    position: absolute;
-    margin-right: 21%;
-margin-top: 1.9%;  
-  }
-  @include x-large{
-    position: absolute;
-    margin-right: 18%;
-margin-top: 1.8%;  
-  }
-  @include xx-large{
-    position: absolute;
-    margin-right: 13%;
-margin-top: 1.2%;  
-  }
-
+font-size: 16px;
+margin-bottom: 2%;
   
 }
 

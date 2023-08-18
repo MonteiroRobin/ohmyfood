@@ -30,11 +30,18 @@
 </div>
 <div class="menu__texte">
 <article class="menu__title">
-        <h1>La palette du goût <i class="fa-regular fa-heart fa-1x nomclasse"></i></h1>
+        <h1>La palette du goût </h1>
+        <div class="heart-container">
+            <input id="heart-checkbox-1" class="heart-checkbox" type="checkbox">
+            <label for="heart-checkbox-1">
+              <i class="far fa-heart fa-2x heart-icon"></i>
+              <i class="fas fa-heart fa-2x heart-icon-fill"></i>
+            </label>
+          </div>
 </article>
         
 
-
+<div class="row-plate">
 <section class="plate">
 
             <h2 class="plate__annoncement">ENTRÉES</h2>
@@ -47,7 +54,9 @@
             </div>
            
                 <p class="plate__price">25€</p>
-          
+                  <div class="plate__icon">
+                                    <i class="fas fa-check-circle icon plate__checkmark"></i>
+                                </div>
 </article>
 
 <article class="plate__menu">
@@ -148,6 +157,7 @@
     <p class="plate__price">23€</p>
 
 </article>
+</div>
 <button class="discover-restaurant__btn-search btn-search--primary btn-center">
     Commander
    </button>
@@ -161,10 +171,10 @@
 <footer>
     <h3 class="footer_title">ohmyfood</h3>
     
+    <p><a href="mailto:contact@ohmyfood.com">Contact</a></p>
     <p> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
     <p> <i class="fa-solid fa-handshake-angle icon_hand"></i> Devenir partenaire</p>
     <p>Mentions légales</p>
-    <a href="mailto:contact@ohmyfood.com">Contact</a>
 </footer>
 
 </body>

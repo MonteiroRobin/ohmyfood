@@ -7,7 +7,13 @@
     justify-content:center;
     flex-direction: column;
     
-    
+    @include x-large{
+        whidth:100%;
+    }
+    @include xx-large{
+        whidth:100%;
+    }
+  
     .image__menu {
     
         left: 0;
@@ -59,13 +65,13 @@
     @include x-large{
         margin:  0 auto;
         margin-top:  -4%;
-              width: 85%;
+              width: 100%;
               align-items: center;
     }
     @include xx-large{
 margin:  0 auto;
 margin-top:  -4%;
-      width: 85%;
+      width: 100%;
       align-items: center;
     }
 }
@@ -99,8 +105,10 @@ margin-top:  -4%;
         width: 100%;
         justify-content: center;
         margin: 0;
+       
     }
 
 
   }
+
 }

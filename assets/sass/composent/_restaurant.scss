@@ -149,78 +149,58 @@ width: 95%;
     right: 0.75rem;
   }
 
+ 
 }
 
 
 
 
 /*TEST ANIMATION COEURS */
-
-
-.checkbox {
-  display: none;
-}
-
-
-.icon-wrapper--heart .icon--heart--empty {
-  display: inline;
-  background: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  z-index: 100;
-}
-
-
-.checkbox:checked + .icon-wrapper--heart .icon--heart--filled {
-  display: inline;
-  background: linear-gradient($Secondary-color, $Primary-color);
-}
-
-
-.icon-wrapper--heart .icon-hider {
+.heart-container{
+  display: flex;
   position: absolute;
-  height: 200%;
-  width: 200%;
-  border-radius: 35%;
-  background-color: transparent;
-  background-color: #ffffff;
-  left: -50%;
-  bottom: 0;
-  z-index: 60;
+  margin-left: 82%;
+  margin-top: -20%;
+}
+.heart-icon {
+  font-size: 2rem;
+  cursor:pointer;
+  position: relative;
+  background: transparent;
 }
 
+.heart-icon-fill {
+  display: flex;
+  position: absolute;
+  top: 2.5px;
+  left: 2.4px;
+  font-size: 1.7rem;
+  color: transparent;
 
-.icon-wrapper--heart .icon--heart--filled {
-  background: linear-gradient(#9356DC, #FF79DA);
+  transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.heart-checkbox {
+  display: none;
+  position: relative;
+}
+
+.heart-checkbox:checked + label .heart-icon-fill {
+  display: flex;
+  position: absolute;
+  background: linear-gradient($Primary-color, $Secondary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  z-index: 50;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.6s ease-in-out;
 }
 
 
-.icon-wrapper--heart {
-  position: relative;
-  height: 25px;
-  width: 27px;
-  border-radius: 0;
-  background-color: transparent;
-}
 
 
-.icon-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  overflow: hidden;
-  align-self: center;
-}
 
 
-label {
-  cursor: default;
-}
+
+
+
+
+
