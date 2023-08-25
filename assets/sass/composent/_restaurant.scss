@@ -155,18 +155,38 @@ width: 95%;
 
 
 
-/*TEST ANIMATION COEURS */
+/*ANIMATION COEURS */
 .heart-container{
   display: flex;
-  position: absolute;
+  position: relative;
   margin-left: 82%;
-  margin-top: -20%;
+  margin-top: -10%;
+
+
+  @include large{
+    position: absolute;
+    margin-left: 82%;
+    margin-top: -18%;
+  }
+
+  @include x-large{
+    position: absolute;
+    margin-left: 82%;
+    margin-top: -15%;
+  }
+  @include xx-large{
+    position: absolute;
+    margin-left: 82%;
+    margin-top: -10%;
+  }
+
 }
 .heart-icon {
-  font-size: 2rem;
+  font-size: 2.4rem;
   cursor:pointer;
-  position: relative;
+  position: absolute;
   background: transparent;
+    
 }
 
 .heart-icon-fill {
@@ -174,7 +194,7 @@ width: 95%;
   position: absolute;
   top: 2.5px;
   left: 2.4px;
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   color: transparent;
 
   transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
@@ -186,12 +206,13 @@ width: 95%;
 }
 
 .heart-checkbox:checked + label .heart-icon-fill {
-  display: flex;
+ 
   position: absolute;
   background: linear-gradient($Primary-color, $Secondary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: background 0.6s ease-in-out;
+  transition: background 4s ease-in-out;
+  padding: none;
 }
 
 
