@@ -2,114 +2,160 @@
 @import "../utils/responsive";
 
 
-.menu{
+.menu {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
-    
-    @include x-large{
-        whidth:100%;
+
+    @include x-large {
+        whidth: 100%;
     }
-    @include xx-large{
-        whidth:100%;
+
+    @include xx-large {
+        whidth: 100%;
     }
-  
+
     .image__menu {
-    
+
         left: 0;
         width: auto;
         height: 100%;
         object-fit: cover;
         z-index: -100;
-    
+
         img {
             width: 100%;
             border-radius: 20px;
             -o-object-fit: cover;
             object-fit: cover;
-            
-                @include medium {
-                    height: 250px;
-                }
-                @include large{
-                    height: 300px;
-                }
-                @include x-large{
-                    height: 350px;
-                }
-                @include xx-large{
-                  height: 400px;
-                }
+
+            @include medium {
+                height: 250px;
+            }
+
+            @include large {
+                height: 300px;
+            }
+
+            @include x-large {
+                height: 350px;
+            }
+
+            @include xx-large {
+                height: 400px;
+            }
         }
-        
-}
-&__texte{
-    position: relative;
-    border-radius: 20px;
-    margin-top: -15%;
-    background-color: $menu-bg;
-  
 
-    @include medium {
-        margin:  0 auto;
-        margin-top:  -4%;
-              width: 85%;
-              align-items: center;
     }
-    @include large{
-        margin:  0 auto;
-        margin-top:  -4%;
-              width: 85%;
-              align-items: center;
-    }
-    @include x-large{
-        margin:  0 auto;
-        margin-top:  -4%;
-              width: 100%;
-              align-items: center;
-    }
-    @include xx-large{
-margin:  0 auto;
-margin-top:  -4%;
-      width: 100%;
-      align-items: center;
-    }
-}
 
-&__title
-{
-   
-    width: 100%;
-    line-height: normal; 
-    font-family: "Shrikhand", cursive;
-    font-size: 28px;
-    font-style: bold;
-    font-weight: 900;
+    &__texte {
+        position: relative;
+        border-radius: 20px;
+        margin-top: -15%;
+        background-color: $menu-bg;
 
-    
 
-    @include large{
-        display: relative;
+        @include medium {
+            margin: 0 auto;
+            margin-top: -4%;
+            width: 85%;
+            align-items: center;
+        }
+
+        @include large {
+            margin: 0 auto;
+            margin-top: -4%;
+            width: 85%;
+            align-items: center;
+        }
+
+        @include x-large {
+            margin: 0 auto;
+            margin-top: -4%;
+            width: 85%;
+            align-items: center;
+        }
+
+        @include xx-large {
+            margin: 0 auto;
+            margin-top: -4%;
+            width: 85%;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        display: flex;
         width: 100%;
-        justify-content: center;
-        margin: 0;
-        
-    }
-    @include x-large{
-        display: relative;
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-    }
-    @include xx-large{
-        display: relative;
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-       
-    }
+        line-height: normal;
+        font-family: "Shrikhand", cursive;
+        font-size: 28px;
+        font-weight: 900;
+        flex-direction: row;
+        margin-left: auto;
+
+        @include large {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include x-large {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include xx-large {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+
+        i {
+            font-size: 2rem;
+            position: absolute;
+            top: 2.2%;
+            right: 7%;
 
 
-  }
+            @include medium {
+                top: 2.2%;
+                right: 15%;
+
+            }
+
+            @include large {
+                top: 2.2%;
+                right: 20%;
+            }
+
+            @include x-large {
+
+                top: 2.2%;
+                right: 25%;
+            }
+
+            @include xx-large {
+                top: 2.2%;
+                right: 30%;
+            }
+
+            i.fas {
+                font-size: 2rem;
+                background-image: linear-gradient(175deg, $Primary-color 0%, $Secondary-color 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                opacity: 0;
+                transition: opacity 200ms;
+            }
+
+            i.fas:hover {
+                opacity: 1;
+                transition: 1.5s;
+            }
+        }
+    }
 
 }

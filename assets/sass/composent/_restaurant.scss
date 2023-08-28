@@ -4,34 +4,41 @@
 
 /*Les restaurants*/
 .restaurant {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: $menu-bg ;
-    margin-top: -7.3%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $menu-bg ;
+  margin-top: -7.3%;
+  height: auto;
 
-  
-    @include medium {
-      margin-top: -3%;
-    }
-    @include large{
-      margin-top: -3%;
-    }
-    @include x-large{
-      margin-top: -3%;
-    }
-    @include xx-large{
-      margin-top: -3%;
-      width: 100%;
-       justify-content: space-between;
-    }
+  @include medium {
+    margin-top: -3%;
+  }
+
+  @include large {
+    margin-top: -3%;
+  }
+
+  @include x-large {
+    margin-top: -3%;
+  }
+
+  @include xx-large {
+    margin-top: -3%;
+    width: 100%;
+    justify-content: space-between;
+  }
 
   &__link {
     text-decoration: none;
     color: #000000;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 20px;
+
   }
-  
+
   &__title {
     font-size: 24px;
     color: $black;
@@ -39,24 +46,25 @@
     padding-bottom: 6%;
     padding-top: 2%;
     background-color: $menu-bg;
-width: 95%;
+    width: 95%;
 
-    @include medium {
-   
-    }
-    @include large{
+    @include medium {}
+
+    @include large {
       padding-left: 5%;
       font-size: 26px;
       margin-top: 4%;
       padding-bottom: 4%;
     }
-    @include x-large{
+
+    @include x-large {
       padding-left: 5%;
       font-size: 28px;
-    margin-top: 4%;
-    padding-bottom: 3%;
+      margin-top: 4%;
+      padding-bottom: 3%;
     }
-    @include xx-large{
+
+    @include xx-large {
       padding-left: 5%;
       font-size: 31px;
       margin-top: 4%;
@@ -64,82 +72,157 @@ width: 95%;
     }
 
   }
-  
+
   &__card {
     justify-content: center;
     align-items: center;
     margin: 1% auto;
     width: 90%;
     border-radius: 20px;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
     position: relative;
     background-color: $white;
+    justify-content: space-around;
 
 
-    @include large{
- width: 35%;
+    @include large {
+      width: 35%;
+      position: relative;
+      margin-bottom: 3%;
+
     }
-    @include x-large{
-    width: 40%;
+
+    @include x-large {
+      width: 40%;
+      position: relative;
+
     }
-    @include xx-large{
-     width: 45%;
-  
+
+    @include xx-large {
+      width: 45%;
+      position: relative;
+
+
     }
   }
-  
-&__row
-{
 
-  @include medium {
- 
+  &__row {
+
+    @include medium {}
+
+    @include large {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include x-large {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include xx-large {
+      display: flex;
+      flex-direction: row;
+    }
+
+
   }
-  @include large{
-    display: flex;
-    flex-direction: row;
-  }
-  @include x-large{
-    display: flex;
-    flex-direction: row;
-  }
-  @include xx-large{
-    display: flex;
-    flex-direction: row;
-  }
-
-
-}
 
 
 
-  &__heart {
+
+
+
+
+  i {
+    font-size: 2rem;
     position: absolute;
-    display: flex;
-    margin-top: -10%;
-    margin-left: 80%;
+    right: 30px;
+    bottom: 7px;
+    transform: translateY(-50%);
+
+    @include medium {
+      right: 50px;
+      bottom: 22px;
+    }
+
+    @include large {
+      right: 34px;
+      bottom: 15px;
+    }
+
+    @include x-large {
+
+      bottom: 18px;
+    }
+
+    @include xx-large {
+      bottom: 20px;
+    }
+
+    .fas {
+      color: transparent;
+      background-image: linear-gradient(175deg, $Primary-color 0%, $Secondary-color 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: all 200ms;
+    }
+
+    &:hover .fas {
+      opacity: 0;
+    }
   }
-  
+
+
+
+
+
+
+
+
+
   &__text {
     margin-left: 4%;
-    
-    @include medium{
-      padding-bottom: 1%;
+
+
+    i.fas {
+      font-size: 2rem;
+      background-image: linear-gradient(175deg, $Primary-color 0%, $Secondary-color 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      opacity: 0;
+      transition: opacity 200ms;
     }
+
+    i.fas:hover {
+      opacity: 1;
+      transition: 1.5s;
+    }
+
   }
+
+
+  @include medium {
+    padding-bottom: 1%;
+  }
+
+
   &__text h3 {
     margin-bottom: 1%;
-    
+
   }
-  
+
   .restaurant__card img {
     object-fit: cover;
     width: 100%;
     border-radius: 20px;
     height: 300px;
-  
+
   }
-  
- &__label-new {
+
+  &__label-new {
     background-color: $Tertary-color;
     color: $ColorNew;
     padding: 0.5rem;
@@ -148,80 +231,4 @@ width: 95%;
     top: 1rem;
     right: 0.75rem;
   }
-
- 
 }
-
-
-
-
-/*ANIMATION COEURS */
-.heart-container{
-  display: flex;
-  position: relative;
-  margin-left: 82%;
-  margin-top: -10%;
-
-
-  @include large{
-    position: absolute;
-    margin-left: 82%;
-    margin-top: -18%;
-  }
-
-  @include x-large{
-    position: absolute;
-    margin-left: 82%;
-    margin-top: -15%;
-  }
-  @include xx-large{
-    position: absolute;
-    margin-left: 82%;
-    margin-top: -10%;
-  }
-
-}
-.heart-icon {
-  font-size: 2.4rem;
-  cursor:pointer;
-  position: absolute;
-  background: transparent;
-    
-}
-
-.heart-icon-fill {
-  display: flex;
-  position: absolute;
-  top: 2.5px;
-  left: 2.4px;
-  font-size: 2.1rem;
-  color: transparent;
-
-  transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
-
-.heart-checkbox {
-  display: none;
-  position: relative;
-}
-
-.heart-checkbox:checked + label .heart-icon-fill {
- 
-  position: absolute;
-  background: linear-gradient($Primary-color, $Secondary-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: background 4s ease-in-out;
-  padding: none;
-}
-
-
-
-
-
-
-
-
-
-
-

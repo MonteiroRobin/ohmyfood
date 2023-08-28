@@ -4,18 +4,21 @@
 .plate {
   max-width: 100%;
   padding: 0 1rem;
+
   @include large {
-    max-width: 100%;
+    max-width: 80%;
     justify-content: center;
     margin: 0 auto;
   }
+
   @include x-large {
-    max-width: 100%;
+    max-width: 80%;
     justify-content: center;
     margin: 0 auto;
   }
+
   @include xx-large {
-    max-width: 100%;
+    max-width: 80%;
     justify-content: center;
     margin: 0 auto;
   }
@@ -36,6 +39,7 @@
       bottom: 0;
     }
   }
+
   &__menu {
     overflow: hidden;
     background-color: #fff;
@@ -51,21 +55,22 @@
     animation: appear 1s;
 
     @include large {
-       
-        font-size: 17px;
-      }
-      @include x-large {
-        width:100%;
-      }
-      @include xx-large {
-       width: 100%;
-      }
+
+      font-size: 17px;
+    }
+
+    @include x-large {
+      width: 100%;
+    }
+
+    @include xx-large {
+      width: 100%;
+    }
   }
 
   &__choice {
     animation: appear 2s;
     max-width: 100%;
-   
     text-overflow: ellipsis;
     font-size: x-large;
     margin-top: 3%;
@@ -75,84 +80,163 @@
       width: auto;
       font-size: 17px;
     }
+
     @include x-large {
       font-size: 17px;
     }
-    @include xx-large {
-      
-    }
+
+    @include xx-large {}
   }
 
   &__title {
     font-weight: bold;
     margin: 0;
+    font-size: 22px;
+
     @include large {
-      font-size: 17px;
+      font-size: 20px;
     }
+
     @include x-large {
-      font-size: 17px;
+      font-size: 25px;
     }
+
     @include xx-large {
-      font-size: 17px;
+      font-size: 27px;
     }
   }
+
   &__description {
     margin-top: 3%;
     max-width: 100%;
+    font-size: 20px;
+
     @include large {
-      font-size: 15px;
+      font-size: 19px;
     }
+
     @include x-large {
-      font-size: 15px;
+      font-size: 22px;
     }
+
     @include xx-large {
-      font-size: 14px;
+      font-size: 25px;
     }
   }
+
   &__price {
     position: relative;
-
+    font-size: 17px;
     font-weight: 700;
     font-size: x-large;
     font-style: bold;
     margin-left: auto;
     padding: 1rem;
-  margin-top: 8%;
+    margin-top: 8%;
 
     @include large {
-      font-size: 17px;
+      font-size: 20px;
     }
+
     @include x-large {
-      font-size: 17px;
+      font-size: 25px;
     }
+
     @include xx-large {
-      font-size: 17px;
+      font-size: 27px;
     }
   }
 
+
+
+
+
+
+
+
+
+
+
+
   &__check {
-   display: flex;
-      $width-checkmark: 3rem;
-      width: $width-checkmark;
-      margin-right: -1 * $width-checkmark;
-      background-color: $Tertary-color;
-      border-radius: 0 1rem 1rem 0;
-    }
-    
-    &:hover .plate__ckeck {
-        display: flex;
-      margin-right: 0;
-    }
+    display: flex;
+  }
+
+  &:hover .check-1 {
+    display: flex;
+    margin-right: 0;
+  }
+
+  &:hover .check-2 {
+    display: flex;
+    margin-right: 0;
+  }
+
+  &:hover .check-3 {
+    display: flex;
+    margin-right: 0;
+  }
+
+  .check-1 {
+    $width-checkmark: 5.5rem;
+    width: $width-checkmark;
+    margin-right: -1 * $width-checkmark;
+    background-color: $Tertary-color;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 1.5s;
+
+
+  }
+
+  .check-2 {
+    $width-checkmark: 5.5rem;
+    width: $width-checkmark;
+    margin-right: -1 * $width-checkmark;
+    background-color: $Tertary-color;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 1.5s;
+
+  }
+
+  .check-3 {
+    $width-checkmark: 5.5rem;
+    width: $width-checkmark;
+    margin-right: -1 * $width-checkmark;
+    background-color: $Tertary-color;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 1.5s;
+
+  }
+
+
+  i {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: $white;
+    scale: 1.5;
+    transition: 1s;
+
+  }
 }
-  
+
+
+
+
+
+
+
+
 
 .row-plate {
-    margin-top: 10%;
+  margin-top: 10%;
+
   @include x-large {
     margin-top: 0%;
     display: flex;
     flex-direction: row;
   }
+
   @include xx-large {
     margin-top: 0%;
     display: flex;
