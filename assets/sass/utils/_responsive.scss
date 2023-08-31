@@ -8,7 +8,7 @@ $breakpoint: (
   xx-large: 1400px
 );
 
-@mixin small{
+@mixin small {
   @media (max-width: map-get($breakpoint, small)) {
     @content;
   }
@@ -36,11 +36,11 @@ $breakpoint: (
   @media (min-width: map-get($breakpoint, xx-large)) {
     @content;
   }
-} 
+}
 
-@mixin breakpoint($bp: 0){
-  @media(min-width: $bp){
+@mixin breakpoint($bp: 0) {
+  @media(min-width: $bp) {
     @content;
   }
- 
+
 }

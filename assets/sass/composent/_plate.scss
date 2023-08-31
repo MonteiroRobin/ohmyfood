@@ -1,6 +1,7 @@
 @import "../utils/variables";
 @import "../utils/responsive";
 
+
 .plate {
   max-width: 100%;
   padding: 0 1rem;
@@ -40,7 +41,7 @@
     }
   }
 
-  &__menu {
+  .plate__menu {
     overflow: hidden;
     background-color: #fff;
     display: flex;
@@ -48,14 +49,38 @@
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    animation: itemAppear 0.6s;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    animation-fill-mode: both;
     max-width: 100%;
-    animation: appear 1s;
+
+    .check-1,
+    .check-2,
+    .check-3 {
+      /* Autres styles ... */
+      margin-right: 0;
+      /* Cacher la coche au départ */
+    }
+
+    &:hover {
+
+      .check-1,
+      .check-2,
+      .check-3 {
+        margin-right: 0;
+
+      }
+    }
+
+    &:not(:hover) {
+
+      .check-1,
+      .check-2,
+      .check-3 {
+
+        width: 0;
+
+      }
+    }
 
     @include large {
-
       font-size: 17px;
     }
 

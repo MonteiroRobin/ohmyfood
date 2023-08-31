@@ -1,63 +1,41 @@
 @import "../utils/variables";
 @import "../utils/responsive";
 
-/*Ensemble footer*/
+/* Ensemble footer */
 footer {
-
   background: $Grey;
   color: white;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
   @include large {
     flex-direction: row-reverse;
     padding-top: 5%;
-
   }
 
   @include x-large {
     flex-direction: row-reverse;
     padding-top: 5%;
-
   }
 
   @include xx-large {
     flex-direction: row-reverse;
     padding-top: 5%;
-
   }
 }
 
 .footer__mention {
-
-
   @include medium {}
 
-  @include large {
-    position: absolute;
-    margin-right: 29%;
-    margin-top: 2.15%;
-  }
+  @include large {}
 
-  @include x-large {
-    position: absolute;
-    margin-right: 25%;
-    margin-top: 2.06%;
-  }
+  @include x-large {}
 
-  @include xx-large {
-
-    position: absolute;
-    margin-right: 25%;
-    margin-top: 10px;
-  }
-
+  @include xx-large {}
 }
 
 .footer__propal {
-
-
   @include medium {}
 
   @include large {
@@ -66,7 +44,6 @@ footer {
     margin-left: 28%;
     margin-top: 1.4%;
     width: 100%;
-
   }
 
   @include x-large {
@@ -75,7 +52,6 @@ footer {
     margin-left: 32%;
     margin-top: 1.4%;
     width: 100%;
-
   }
 
   @include xx-large {
@@ -85,54 +61,52 @@ footer {
     margin-top: 1.7%;
     width: 100%;
   }
-
-
 }
 
 .footer_title {
   font-size: 27px;
-  color: $white ;
+  color: $white;
   font-family: "Shrikhand", cursive;
   font-style: italic;
   font-weight: 700;
   margin: 1rem 0rem;
   margin-left: 10%;
 
-
-
-
   @include medium {}
 
   @include large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 5%;
     margin-top: 1%;
+    margin-left: 5%;
   }
 
   @include x-large {
     margin-right: 5%;
+    margin-left: 5%;
   }
 
   @include xx-large {
     margin-right: 5%;
+    margin-left: 5%;
   }
+}
 
-
-
-
-
+.footer_title a {
+  text-decoration: none;
+  color: $white;
+  font-size: 16px;
 }
 
 footer p {
-  color: $white ;
+  color: $white;
   background-color: $Grey;
   margin-left: 10%;
   font-family: 'Roboto';
   font-size: 16px;
 
-
-
-
-
   @include medium {}
 
   @include large {
@@ -151,9 +125,7 @@ footer p {
     font-size: 12px;
     margin-left: 5%;
     margin-top: 2%;
-
   }
-
 }
 
 footer .icon_hand {
@@ -169,10 +141,7 @@ footer .icon_hand {
 
   @include xx-large {
     margin-right: 10px;
-    ;
-
   }
-
 }
 
 footer p i {
@@ -181,8 +150,39 @@ footer p i {
 
 footer a {
   text-decoration: none;
-  color: $white ;
+  color: $white;
   font-size: 16px;
   margin-bottom: 2%;
 
+  @include large {}
+
+  @include x-large {}
+
+  @include xx-large {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.reverse {
+  width: 100%;
+  justify-content: end;
+
+  @include large {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  @include x-large {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  @include xx-large {
+    display: flex;
+    flex-direction: row;
+
+  }
 }
