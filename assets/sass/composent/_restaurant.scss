@@ -85,6 +85,8 @@
     justify-content: space-around;
 
 
+
+
     @include large {
       width: 35%;
       position: relative;
@@ -185,6 +187,9 @@
   &__text {
     margin-left: 4%;
 
+    @include small {
+      width: 70%;
+    }
 
     i.fas {
       font-size: 2rem;
@@ -193,12 +198,12 @@
       -webkit-background-clip: text;
       color: transparent;
       opacity: 0;
-      transition: opacity 200ms;
+      transition: opacity 2s;
+
     }
 
     i.fas:hover {
       opacity: 1;
-      transition: 1.5s;
     }
 
   }
@@ -220,6 +225,9 @@
     border-radius: 20px;
     height: 300px;
 
+    @include small {
+      height: 200px;
+    }
   }
 
   &__label-new {
