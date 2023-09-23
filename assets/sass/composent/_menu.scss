@@ -7,13 +7,6 @@
     justify-content: center;
     flex-direction: column;
 
-    @include x-large {
-        whidth: 100%;
-    }
-
-    @include xx-large {
-        whidth: 100%;
-    }
 
     .image__menu {
 

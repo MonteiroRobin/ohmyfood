@@ -488,16 +488,6 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-@media (min-width: 1200px) {
-  .menu {
-    whidth: 100%;
-  }
-}
-@media (min-width: 1400px) {
-  .menu {
-    whidth: 100%;
-  }
-}
 .menu .image__menu {
   left: 0;
   width: auto;
