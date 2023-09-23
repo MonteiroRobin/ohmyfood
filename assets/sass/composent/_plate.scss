@@ -3,31 +3,17 @@
 
 
 .plate {
-  max-width: 100%;
-  padding: 0 1rem;
+  max-width: 90%;
+  margin: 0 auto;
 
   @include large {
-    max-width: 80%;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  @include x-large {
-    max-width: 80%;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  @include xx-large {
-    max-width: 80%;
-    justify-content: center;
+    max-width: 70%;
     margin: 0 auto;
   }
 
   &__annoncement {
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 0.5rem;
     font-weight: 400;
 
     &:after {
@@ -55,9 +41,7 @@
     .check-1,
     .check-2,
     .check-3 {
-      /* Autres styles ... */
       margin-right: 0;
-      /* Cacher la coche au départ */
     }
 
     &:hover {
@@ -81,110 +65,40 @@
       }
     }
 
-    @include large {
-      font-size: 17px;
-    }
-
-    @include x-large {
-      width: 100%;
-    }
-
-    @include xx-large {
-      width: 100%;
-    }
   }
 
   &__choice {
 
     max-width: 100%;
-    text-overflow: ellipsis;
-    margin-top: 3%;
-    padding: 1rem;
+    white-space: nowrap;
     overflow: hidden;
-
-    @include large {
-      width: auto;
-      font-size: 17px;
-    }
-
-    @include x-large {
-      font-size: 17px;
-    }
-
-    @include xx-large {}
+    text-overflow: ellipsis;
+    margin: 10px 0 0 10px;
   }
 
   &__title {
     font-weight: bold;
     margin: 0;
-
-    @include large {
-      font-size: 20px;
-    }
-
-    @include x-large {
-      font-size: 25px;
-    }
-
-    @include xx-large {
-      font-size: 27px;
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__description {
-    margin-top: 3%;
     max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
-
-    @include large {
-      font-size: 19px;
-    }
-
-    @include x-large {
-      font-size: 22px;
-    }
-
-    @include xx-large {
-      font-size: 25px;
-    }
   }
 
   &__price {
-    position: relative;
-    font-size: 17px;
+    display: flex;
     font-weight: 700;
-    font-style: bold;
     margin-left: auto;
-    padding: 1rem;
-    margin-top: 8%;
-
-    @include small {
-
-      padding-bottom: 0%;
-      margin-top: 90px;
-    }
-
-    @include large {
-      font-size: 20px;
-    }
-
-    @include x-large {
-      font-size: 25px;
-    }
-
-    @include xx-large {
-      font-size: 27px;
-    }
+    margin-top: auto;
+    margin-right: 10px;
   }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -247,29 +161,5 @@
     scale: 1.5;
     transition: 1s;
 
-  }
-}
-
-
-
-
-
-
-
-
-
-.row-plate {
-  margin-top: 10%;
-
-  @include x-large {
-    margin-top: 0%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  @include xx-large {
-    margin-top: 0%;
-    display: flex;
-    flex-direction: row;
   }
 }

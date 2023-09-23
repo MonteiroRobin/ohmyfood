@@ -3,20 +3,20 @@
 
 
 .search-bar {
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    background-color:$backgroundgrey;
-    align-items: center;
-  
-   
- &__input {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: $backgroundgrey;
+  align-items: center;
+
+
+  &__input {
     border: none;
     color: #353535;
     background-color: $backgroundgrey;
     margin-left: 2%;
     width: 120px;
     outline: none;
-    font-size: 17px;
+
   }
 }

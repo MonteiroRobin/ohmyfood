@@ -19,15 +19,7 @@
     margin-top: -3%;
   }
 
-  @include x-large {
-    margin-top: -3%;
-  }
 
-  @include xx-large {
-    margin-top: -3%;
-    width: 100%;
-    justify-content: space-between;
-  }
 
   &__link {
     text-decoration: none;
@@ -40,7 +32,7 @@
   }
 
   &__title {
-    font-size: 24px;
+
     color: $black;
     padding-left: 5%;
     padding-bottom: 6%;
@@ -48,28 +40,16 @@
     background-color: $menu-bg;
     width: 95%;
 
-    @include medium {}
+
 
     @include large {
       padding-left: 5%;
-      font-size: 26px;
+
       margin-top: 4%;
       padding-bottom: 4%;
     }
 
-    @include x-large {
-      padding-left: 5%;
-      font-size: 28px;
-      margin-top: 4%;
-      padding-bottom: 3%;
-    }
 
-    @include xx-large {
-      padding-left: 5%;
-      font-size: 31px;
-      margin-top: 4%;
-      padding-bottom: 3%;
-    }
 
   }
 
@@ -88,45 +68,21 @@
 
 
     @include large {
-      width: 35%;
+      width: 45%;
       position: relative;
       margin-bottom: 3%;
 
     }
 
-    @include x-large {
-      width: 40%;
-      position: relative;
 
-    }
-
-    @include xx-large {
-      width: 45%;
-      position: relative;
-
-
-    }
   }
 
   &__row {
-
-    @include medium {}
 
     @include large {
       display: flex;
       flex-direction: row;
     }
-
-    @include x-large {
-      display: flex;
-      flex-direction: row;
-    }
-
-    @include xx-large {
-      display: flex;
-      flex-direction: row;
-    }
-
 
   }
 
@@ -153,14 +109,7 @@
       bottom: 15px;
     }
 
-    @include x-large {
 
-      bottom: 18px;
-    }
-
-    @include xx-large {
-      bottom: 20px;
-    }
 
     .fas {
       color: transparent;
@@ -186,10 +135,7 @@
 
   &__text {
     margin-left: 4%;
-
-    @include small {
-      width: 70%;
-    }
+    width: 70%;
 
     i.fas {
       font-size: 2rem;
@@ -223,11 +169,8 @@
     object-fit: cover;
     width: 100%;
     border-radius: 20px;
-    height: 300px;
+    height: 200px;
 
-    @include small {
-      height: 200px;
-    }
   }
 
   &__label-new {

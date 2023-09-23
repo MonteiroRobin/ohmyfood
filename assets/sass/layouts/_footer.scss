@@ -14,15 +14,6 @@ footer {
     padding-top: 5%;
   }
 
-  @include x-large {
-    flex-direction: row-reverse;
-    padding-top: 5%;
-  }
-
-  @include xx-large {
-    flex-direction: row-reverse;
-    padding-top: 5%;
-  }
 }
 
 .footer__mention {
@@ -30,9 +21,6 @@ footer {
 
   @include large {}
 
-  @include x-large {}
-
-  @include xx-large {}
 }
 
 .footer__propal {
@@ -46,21 +34,6 @@ footer {
     width: 100%;
   }
 
-  @include x-large {
-    flex-direction: row;
-    display: flex;
-    margin-left: 32%;
-    margin-top: 1.4%;
-    width: 100%;
-  }
-
-  @include xx-large {
-    flex-direction: row;
-    display: flex;
-    margin-left: 35%;
-    margin-top: 1.7%;
-    width: 100%;
-  }
 }
 
 .footer_title {
@@ -78,19 +51,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 5%;
-    margin-top: 1%;
-    margin-left: 5%;
-  }
-
-  @include x-large {
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  @include xx-large {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin: 1% 5% 0 5%;
   }
 }
 
@@ -105,27 +66,13 @@ footer p {
   background-color: $Grey;
   margin-left: 10%;
   font-family: 'Roboto';
-  font-size: 16px;
-
-  @include medium {}
 
   @include large {
-    font-size: 12px;
+
     margin-left: 5%;
     margin-top: 2%;
   }
 
-  @include x-large {
-    font-size: 12px;
-    margin-left: 5%;
-    margin-top: 2%;
-  }
-
-  @include xx-large {
-    font-size: 12px;
-    margin-left: 5%;
-    margin-top: 2%;
-  }
 }
 
 footer .icon_hand {
@@ -135,13 +82,6 @@ footer .icon_hand {
     margin-right: 10px;
   }
 
-  @include x-large {
-    margin-right: 10px;
-  }
-
-  @include xx-large {
-    margin-right: 10px;
-  }
 }
 
 footer p i {
@@ -151,14 +91,10 @@ footer p i {
 footer a {
   text-decoration: none;
   color: $white;
-  font-size: 16px;
   margin-bottom: 2%;
 
-  @include large {}
 
-  @include x-large {}
-
-  @include xx-large {
+  @include large {
     display: flex;
     margin-left: auto;
   }
@@ -174,15 +110,5 @@ footer a {
 
   }
 
-  @include x-large {
-    display: flex;
-    flex-direction: row;
 
-  }
-
-  @include xx-large {
-    display: flex;
-    flex-direction: row;
-
-  }
 }

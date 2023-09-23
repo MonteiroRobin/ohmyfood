@@ -1,15 +1,12 @@
 @import '../utils/variables';
-@import '../utils/responsive'; 
+@import '../utils/responsive';
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  max-width: 100%; 
+  max-width: 100%;
   background-color: $white;
-  
-  @include small {
-    max-width: map-get($breakpoint, small);
-  }
+
 
 
   @include medium {
@@ -20,11 +17,7 @@ body {
     max-width: map-get($breakpoint, large);
   }
 
-  @include x-large{
-    max-width: map-get($breakpoint, x-large);
-  }
 
-  @include xx-large{
-    max-width: map-get($breakpoint, xx-large);
-  }
+
+
 }
