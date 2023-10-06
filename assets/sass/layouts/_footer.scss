@@ -9,6 +9,7 @@ footer {
   display: flex;
   flex-direction: column;
 
+
   @include large {
     flex-direction: row-reverse;
     padding-top: 5%;

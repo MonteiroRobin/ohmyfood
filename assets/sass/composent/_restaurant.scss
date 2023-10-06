@@ -8,17 +8,7 @@
   flex-direction: column;
   width: 100%;
   background-color: $menu-bg ;
-  margin-top: -7.3%;
   height: auto;
-
-  @include medium {
-    margin-top: -3%;
-  }
-
-  @include large {
-    margin-top: -3%;
-  }
-
 
 
   &__link {

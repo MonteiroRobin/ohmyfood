@@ -39,22 +39,14 @@
         border-radius: 20px;
         margin-top: -15%;
         background-color: $menu-bg;
-
+        padding-bottom: 3%;
 
         @include medium {
             margin: 0 auto;
             margin-top: -4%;
-            width: 85%;
+            width: 90%;
             align-items: center;
         }
-
-        @include large {
-            margin: 0 auto;
-            margin-top: -4%;
-            width: 85%;
-            align-items: center;
-        }
-
     }
 
     &__title {

@@ -52,8 +52,7 @@ body {
   box-sizing: content-box;
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   width: 40%;
-  height: 30px;
-  padding: 13px 13px;
+  height: 52px;
   border-radius: 2rem;
   color: white;
   border: 1px #FF79DA;
@@ -63,25 +62,11 @@ body {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-bottom: 3%;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .discover-restaurant__btn-search {
-    width: 33%;
-  }
-}
-@media (min-width: 1024px) {
-  .discover-restaurant__btn-search {
-    width: 24%;
-  }
 }
 .discover-restaurant__btn-search:hover {
   transform: scale(1.02);
   opacity: 0.7;
-}
-.discover-restaurant p {
-  margin-bottom: 18px;
 }
 
 /*Section Fonctionnement*/
@@ -172,18 +157,7 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: #f6f6f6;
-  margin-top: -7.3%;
   height: auto;
-}
-@media (min-width: 768px) {
-  .restaurant {
-    margin-top: -3%;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant {
-    margin-top: -3%;
-  }
 }
 .restaurant__link {
   text-decoration: none;
@@ -337,20 +311,13 @@ body {
   border-radius: 20px;
   margin-top: -15%;
   background-color: #f6f6f6;
+  padding-bottom: 3%;
 }
 @media (min-width: 768px) {
   .menu__texte {
     margin: 0 auto;
     margin-top: -4%;
-    width: 85%;
-    align-items: center;
-  }
-}
-@media (min-width: 1024px) {
-  .menu__texte {
-    margin: 0 auto;
-    margin-top: -4%;
-    width: 85%;
+    width: 90%;
     align-items: center;
   }
 }
@@ -426,7 +393,7 @@ body {
   bottom: 0;
 }
 .plate .plate__menu {
-  animation: appear 2s;
+  animation: appear 2.5s forwards;
   overflow: hidden;
   background-color: #fff;
   display: flex;
@@ -436,20 +403,23 @@ body {
   cursor: pointer;
   max-width: 100%;
 }
-.plate .plate__menu .check-1,
-.plate .plate__menu .check-2,
-.plate .plate__menu .check-3 {
+.plate .plate__menu .check {
   margin-right: 0;
 }
-.plate .plate__menu:hover .check-1,
-.plate .plate__menu:hover .check-2,
-.plate .plate__menu:hover .check-3 {
+.plate .plate__menu:hover .check {
   margin-right: 0;
 }
-.plate .plate__menu:not(:hover) .check-1,
-.plate .plate__menu:not(:hover) .check-2,
-.plate .plate__menu:not(:hover) .check-3 {
+.plate .plate__menu:not(:hover) .check {
   width: 0;
+}
+.plate .plate__menu:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.plate .plate__menu:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.plate .plate__menu:nth-of-type(3) {
+  animation-delay: 1.5s;
 }
 .plate__choice {
   max-width: 100%;
@@ -475,43 +445,21 @@ body {
   display: flex;
   font-weight: 700;
   margin-left: auto;
-  margin-top: auto;
+  align-items: end;
   margin-right: 10px;
 }
 .plate__check {
   display: flex;
+  margin-right: 0;
 }
-.plate:hover .check-1 {
+.plate:hover .check {
   display: flex;
   margin-right: 0;
 }
-.plate:hover .check-2 {
-  display: flex;
-  margin-right: 0;
-}
-.plate:hover .check-3 {
-  display: flex;
-  margin-right: 0;
-}
-.plate .check-1 {
+.plate .check {
   width: 5.5rem;
   margin-right: -5.5rem;
   background-color: #99E2D0;
-  border-radius: 0 1rem 1rem 0;
-  transition: all 1.5s;
-}
-.plate .check-2 {
-  width: 5.5rem;
-  margin-right: -5.5rem;
-  background-color: #99E2D0;
-  border-radius: 0 1rem 1rem 0;
-  transition: all 1.5s;
-}
-.plate .check-3 {
-  width: 5.5rem;
-  margin-right: -5.5rem;
-  background-color: #99E2D0;
-  border-radius: 0 1rem 1rem 0;
   transition: all 1.5s;
 }
 .plate i {
@@ -654,6 +602,16 @@ footer a {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes delay {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* Styles pour le loader */

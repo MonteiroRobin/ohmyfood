@@ -28,7 +28,7 @@
   }
 
   .plate__menu {
-    animation: appear 2s;
+    animation: appear 2.5s forwards;
     overflow: hidden;
     background-color: #fff;
     display: flex;
@@ -38,34 +38,39 @@
     cursor: pointer;
     max-width: 100%;
 
-    .check-1,
-    .check-2,
-    .check-3 {
+    .check {
       margin-right: 0;
     }
 
     &:hover {
 
-      .check-1,
-      .check-2,
-      .check-3 {
+      .check {
         margin-right: 0;
-
       }
     }
 
     &:not(:hover) {
 
-      .check-1,
-      .check-2,
-      .check-3 {
-
+      .check {
         width: 0;
-
       }
     }
 
   }
+
+
+  .plate__menu:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+
+  .plate__menu:nth-of-type(2) {
+    animation-delay: 1s;
+  }
+
+  .plate__menu:nth-of-type(3) {
+    animation-delay: 1.5s;
+  }
+
 
   &__choice {
 
@@ -96,7 +101,7 @@
     display: flex;
     font-weight: 700;
     margin-left: auto;
-    margin-top: auto;
+    align-items: end;
     margin-right: 10px;
   }
 
@@ -104,53 +109,23 @@
 
   &__check {
     display: flex;
+    margin-right: 0
   }
 
-  &:hover .check-1 {
+  &:hover .check {
     display: flex;
     margin-right: 0;
   }
 
-  &:hover .check-2 {
-    display: flex;
-    margin-right: 0;
-  }
 
-  &:hover .check-3 {
-    display: flex;
-    margin-right: 0;
-  }
-
-  .check-1 {
+  .check {
     $width-checkmark: 5.5rem;
     width: $width-checkmark;
     margin-right: -1 * $width-checkmark;
     background-color: $Tertary-color;
-    border-radius: 0 1rem 1rem 0;
     transition: all 1.5s;
-
-
   }
 
-  .check-2 {
-    $width-checkmark: 5.5rem;
-    width: $width-checkmark;
-    margin-right: -1 * $width-checkmark;
-    background-color: $Tertary-color;
-    border-radius: 0 1rem 1rem 0;
-    transition: all 1.5s;
-
-  }
-
-  .check-3 {
-    $width-checkmark: 5.5rem;
-    width: $width-checkmark;
-    margin-right: -1 * $width-checkmark;
-    background-color: $Tertary-color;
-    border-radius: 0 1rem 1rem 0;
-    transition: all 1.5s;
-
-  }
 
 
   i {
